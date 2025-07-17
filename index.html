@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Labirinto</title>
+</head>
+<body>
+  <h1>Ajude a princesa a chegar ao castelo</h1>
+  <div class="canvas-container">
+    <canvas id="maze"></canvas>
+  </div>
+
+  <div class="controls">
+    <div><button onclick="move(0, -1)">↑</button></div>
+    <div>
+      <button onclick="move(-1, 0)">←</button>
+      <button onclick="move(1, 0)">→</button>
+    </div>
+    <div><button onclick="move(0, 1)">↓</button></div>
+  </div>
+
+  <div id="win-message" style="display:none;">
+    Você venceu! <a href="https://julianesilva32.github.io/ultimacarta/">Ir para a recompensa</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
